@@ -1,0 +1,71 @@
+rajatpancholi1008@Rajat MINGW64 /C/Users/rajatpancholi1008/scala_samples/variables
+$ sbt console
+[warn] No sbt.version set in project/build.properties, base directory: C:\Users\rajatpancholi1008\scala_samples\variables
+[info] Set current project to variables (in build file:/C:/Users/rajatpancholi1008/scala_samples/variables/)
+[info] Starting scala interpreter...
+Welcome to Scala 2.12.6 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_181).
+Type in expressions for evaluation. Or try :help.
+
+scala> var a : Int = 12
+a: Int = 12
+
+scala> a+30
+res0: Int = 42
+
+scala> a+258
+res1: Int = 270
+
+scala> val b : Int = 60
+b: Int = 60
+
+scala> a = 35
+a: Int = 35
+
+scala> b = 25
+<console>:12: error: reassignment to val
+       b = 25
+         ^
+
+scala> var c : Int;
+<console>:11: error: only traits and abstract classes can have declared but undefined members
+(Note that variables need to be initialized to be defined)
+       var c : Int;
+           ^
+
+scala> var c = true
+c: Boolean = true
+
+scala> var d = 123.45
+d: Double = 123.45
+
+scala> var d = 123.45f
+d: Float = 123.45
+
+scala> val x = {val a = 200; val b = 300; a+b}
+x: Int = 500
+
+scala> val x = {
+     | val a : Int = 400;
+     | val b : Int = 200;
+     | a+b;
+     | }
+x: Int = 600
+
+scala> val x = {
+     | val a : Int = 400
+     | val b : Int = 200
+     | a+b
+     | }
+x: Int = 600
+
+scala> val x = 500
+x: Int = 500
+
+scala> x * 20
+res2: Int = 10000
+
+scala> lazy val x = 500
+x: Int = <lazy>
+
+scala> x * 2
+res3: Int = 1000
