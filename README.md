@@ -40,7 +40,8 @@ Scala is Practical.
 * Decent IDE support (IntelliJ, Eclipse, NetBeans)
 
 
-2. SBT
+CHAPTER 2. SBT
+**************
 
 What is SBT ?
 
@@ -57,4 +58,88 @@ Why SBT ?
 * Full Scala language support for creating tasks
 * Support for mixed Java/Scala projects
 * Launch REPL(Read-Eval-Print-Loop) in project context.
+
+CHAPTER 3. SBT Installation
+***************************
+
+Step1:-Download the jdk and set the path of both jre and jdk and JAVA_HOME
+Step2:-Download the sbt, and check whether the path is set or not.
+Step3:-Run the below command in command prompt:-
+> mkdir scala_samples
+> cd scala_samples
+> mkdir sbt_proj
+> cd sbt_proj
+> C:\Users\rajatpancholi1008\scala_samples\sbt_proj
+> sbt
+> exit 
+(to come out of the shell)
+* It will launch the sbt and will download all the required binaries for the scala project
+
+CHAPTER 4. Data types and Variables
+***********************************
+Scala is not an interpreted language, it is compiled language. In REPL also, it will eventually convert it into the class and it will
+show the result.
+
+mkdir C:\Users\rajatpancholi1008\scala_samples\variables
+
+cd C:\Users\rajatpancholi1008\scala_samples\variables
+
+> sbt console
+
+scala shell will get open
+
+* Data types in scala:-
+
+1. Boolean - true or false
+2. Byte - 8 bit signed value
+3. Short - 16 bit signed value
+4. Char - 16 bit unsigned Unicode character
+5. Int - 32 bit signed value
+6. Long - 64 bit signed value
+7. Float - 32 bit IEEE 754 single-precision float
+8. Double - 64 bit IEEE 754 double-precision float
+9. String - A sequence of characters
+
+Some Advanced Data Types:-
+
+1. Unit - Corresponds to no value
+2. Null - null or empty reference
+3. Nothing - subtype of every other type; includes no
+4. Any - The supertype of any type; any object is of
+5. AnyRef - The supertype of any reference type
+
+
+* Declaring variables in scala:-
+
+1. var -> it is mutable i.e. we can change the value declared later but not the data type.
+2. val -> it is immutable, we can not modify the values once assigned.
+
+scala> var a : Int = 12
+a: Int = 12
+
+var - it is a keyword
+a - it is a variable name
+: - it is separator
+Int - it is the datatype
+12 - it is the value
+
+
+scala> a+30
+res0: Int = 42
+
+scala> a+258
+res1: Int = 270
+
+
+scala> val b : Int = 60
+b: Int = 60
+
+scala> a = 35
+a: Int = 35
+
+scala> b = 25
+<console>:12: error: reassignment to val
+       b = 25
+
+Note:- value a got changed as it was var but b not changed as it was val.
 
