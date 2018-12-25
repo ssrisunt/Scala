@@ -6,4 +6,4 @@ or
 
 HelloWorld.main(Array())
 
-Or Directly run it through Eclipse IDE
+Or Directly run it through Eclipse IDE using Run As -> Scala Application
