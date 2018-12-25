@@ -1,0 +1,9 @@
+Use below command  to run it on shell(REPL):-
+
+HelloWorld.main(Array(""))
+
+or
+
+HelloWorld.main(Array())
+
+Or Directly run it through Eclipse IDE
