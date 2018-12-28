@@ -1,3 +1,4 @@
+# ctrl+shift+f -> to format the code in Eclipse IDE
 object ForLoopInScala {
   def main(args: Array[String]) {
     //Start of for loop as statement
